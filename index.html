@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Testing According to Signal</title>
+  <link rel="stylesheet" href="sigstyles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Speed Testing According to Signal</h2>
+    <form id="speedTestForm" onsubmit="return validateForm()">
+      <label for="dateTime">Date and Time:</label>
+      <input type="datetime-local" id="dateTime" name="dateTime" required>
+      
+      <label for="cliName">CLI Name:</label>
+      <select id="cliName" name="cliName" required>
+        <option value="" disabled selected>Select CLI Name</option>
+        <option value="CLI1">CLI1</option>
+        <option value="CLI2">CLI2</option>
+        <option value="CLI3">CLI3</option>
+      </select>
+
+      <label for="locoNo">Loco No:</label>
+      <input type="text" id="locoNo" name="locoNo" required>
+
+      <label for="signalAspect">Signal Aspect:</label>
+      <select id="signalAspect" name="signalAspect" required>
+        <option value="" disabled selected>Select Signal Aspect</option>
+        <option value="Stop">Stop</option>
+        <option value="Caution">Caution</option>
+        <option value="Proceed">Proceed</option>
+      </select>
+
+      <label for="section">Section:</label>
+      <input type="text" id="section" name="section" required>
+
+      <label for="kmNo">KM No:</label>
+      <input type="text" id="kmNo" name="kmNo" required>
+
+      <label for="speed">Speed of the Train:</label>
+      <input type="number" id="speed" name="speed" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="sigscript.js"></script>
+</body>
+</html>
