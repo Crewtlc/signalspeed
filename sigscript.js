@@ -12,7 +12,7 @@ function validateForm() {
     return false;
   }
 
-  alert("Form submitted successfully!");
+  
   return true;
 }
  const scriptURL = 'https://script.google.com/macros/s/AKfycbwed8v7A1jEe_Aj13R2eUSF801I8dLJDKxZi9y22I56lA54sV2QJ8HVI3Q955L8NB9Z/exec';
