@@ -15,8 +15,8 @@ function validateForm() {
   alert("Form submitted successfully!");
   return true;
 }
- const scriptURL = 'https://script.google.com/macros/s/AKfycbyU86Ya4C8w5x3Oc3Tg_Xz2OBbX8wyUzn5ZB4ihNl8cwe68cRJtZgqpt1Kmo29blPu2/exec';
-const form = document.forms['mobileCheckForm'];
+ const scriptURL = 'https://script.google.com/macros/s/AKfycbyR47VMJFWWzcAlglYR5G1JDXM9aQtXS4uzZu60R6KCSGJx-TDW1i1jE6VaaIPT1D3a/exec';
+const form = document.forms['speedTestForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
 
 form.addEventListener('submit', async e => {
